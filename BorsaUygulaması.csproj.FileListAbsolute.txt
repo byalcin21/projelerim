@@ -1,0 +1,6 @@
+C:\Users\baran\source\repos\BorsaUygulaması\BorsaUygulaması\obj\Debug\netcoreapp3.1\BorsaUygulaması.Form1.resources
+C:\Users\baran\source\repos\BorsaUygulaması\BorsaUygulaması\obj\Debug\netcoreapp3.1\BorsaUygulaması.Properties.Resources.resources
+C:\Users\baran\source\repos\BorsaUygulaması\BorsaUygulaması\obj\Debug\netcoreapp3.1\BorsaUygulaması.csproj.GenerateResource.cache
+C:\Users\baran\source\repos\BorsaUygulaması\BorsaUygulaması\obj\Debug\netcoreapp3.1\BorsaUygulaması.AssemblyInfoInputs.cache
+C:\Users\baran\source\repos\BorsaUygulaması\BorsaUygulaması\obj\Debug\netcoreapp3.1\BorsaUygulaması.AssemblyInfo.cs
+C:\Users\baran\source\repos\BorsaUygulaması\BorsaUygulaması\obj\Debug\netcoreapp3.1\BorsaUygulaması.csproj.CoreCompileInputs.cache
