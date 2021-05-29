@@ -1,5 +1,0 @@
-﻿Derleme başladı...
-1>------ Derleme başladı: Proje: BorsaUygulaması, Yapılandırma: Debug Any CPU ------
-1>C:\Users\baran\source\repos\BorsaUygulaması\BorsaUygulaması\Form1.cs(23,9,23,22): error CS1069: 'SqlConnection' tür adı 'System.Data.SqlClient' ad alanında bulunamadı. Bu tür 'System.Data.SqlClient, Version=4.6.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' derlemesine iletilmiş Bu derlemeye bir başvuru eklemeyi deneyin.
-1>"BorsaUygulaması.csproj" projesini oluşturma tamamlandı -- BAŞARISIZ OLDU.
-========== Oluşturma: 0 başarılı, 1 başarısız, 0 güncel, 0 atlandı ==========
