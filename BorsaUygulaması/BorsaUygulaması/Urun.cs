@@ -11,5 +11,6 @@ namespace BorsaUygulaması
         public string Isim { get; set; }
         public int Miktar { get; set; }
         public int Ucret { get; set; }
+        
     }
 }

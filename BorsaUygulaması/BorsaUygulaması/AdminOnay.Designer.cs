@@ -32,36 +32,36 @@ namespace BorsaUygulaması
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminOnay));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UrunMiktar_txtbox = new System.Windows.Forms.TextBox();
+            this.UrunDGW = new System.Windows.Forms.DataGridView();
+            this.UrunFiyat_txtbox = new System.Windows.Forms.TextBox();
+            this.UrunAdi_txtbox = new System.Windows.Forms.TextBox();
+            this.SatanKullanıcıAdi_txtbox = new System.Windows.Forms.TextBox();
+            this.UrunTalepNo_txtbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.UrunRed_btn = new System.Windows.Forms.Button();
+            this.UrunKabul_btn = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.para = new System.Windows.Forms.Label();
+            this.kullaniciIDlbl = new System.Windows.Forms.Label();
+            this.ParaDGW = new System.Windows.Forms.DataGridView();
+            this.KullaniciAdi_txtboxx = new System.Windows.Forms.TextBox();
+            this.TalepMiktari_txtboxx = new System.Windows.Forms.TextBox();
+            this.ParaTalepNo_txtbox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.ParaReddet_btn = new System.Windows.Forms.Button();
+            this.ParaKabul_btn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UrunDGW)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ParaDGW)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -76,19 +76,19 @@ namespace BorsaUygulaması
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox6);
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.UrunMiktar_txtbox);
+            this.tabPage1.Controls.Add(this.UrunDGW);
+            this.tabPage1.Controls.Add(this.UrunFiyat_txtbox);
+            this.tabPage1.Controls.Add(this.UrunAdi_txtbox);
+            this.tabPage1.Controls.Add(this.SatanKullanıcıAdi_txtbox);
+            this.tabPage1.Controls.Add(this.UrunTalepNo_txtbox);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.UrunRed_btn);
+            this.tabPage1.Controls.Add(this.UrunKabul_btn);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -97,51 +97,51 @@ namespace BorsaUygulaması
             this.tabPage1.Text = "Ürün Onayı";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // UrunMiktar_txtbox
             // 
-            this.textBox6.Location = new System.Drawing.Point(180, 156);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(125, 27);
-            this.textBox6.TabIndex = 25;
+            this.UrunMiktar_txtbox.Location = new System.Drawing.Point(180, 156);
+            this.UrunMiktar_txtbox.Name = "UrunMiktar_txtbox";
+            this.UrunMiktar_txtbox.Size = new System.Drawing.Size(125, 27);
+            this.UrunMiktar_txtbox.TabIndex = 25;
             // 
-            // dataGridView1
+            // UrunDGW
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 188);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(561, 182);
-            this.dataGridView1.TabIndex = 12;
-            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
+            this.UrunDGW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UrunDGW.Location = new System.Drawing.Point(8, 188);
+            this.UrunDGW.Name = "UrunDGW";
+            this.UrunDGW.RowHeadersWidth = 51;
+            this.UrunDGW.RowTemplate.Height = 29;
+            this.UrunDGW.Size = new System.Drawing.Size(561, 182);
+            this.UrunDGW.TabIndex = 12;
+            this.UrunDGW.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
-            // textBox5
+            // UrunFiyat_txtbox
             // 
-            this.textBox5.Location = new System.Drawing.Point(180, 123);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 27);
-            this.textBox5.TabIndex = 11;
+            this.UrunFiyat_txtbox.Location = new System.Drawing.Point(180, 123);
+            this.UrunFiyat_txtbox.Name = "UrunFiyat_txtbox";
+            this.UrunFiyat_txtbox.Size = new System.Drawing.Size(125, 27);
+            this.UrunFiyat_txtbox.TabIndex = 11;
             // 
-            // textBox4
+            // UrunAdi_txtbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(180, 90);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 27);
-            this.textBox4.TabIndex = 10;
+            this.UrunAdi_txtbox.Location = new System.Drawing.Point(180, 90);
+            this.UrunAdi_txtbox.Name = "UrunAdi_txtbox";
+            this.UrunAdi_txtbox.Size = new System.Drawing.Size(125, 27);
+            this.UrunAdi_txtbox.TabIndex = 10;
             // 
-            // textBox3
+            // SatanKullanıcıAdi_txtbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(180, 57);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 27);
-            this.textBox3.TabIndex = 9;
+            this.SatanKullanıcıAdi_txtbox.Location = new System.Drawing.Point(180, 57);
+            this.SatanKullanıcıAdi_txtbox.Name = "SatanKullanıcıAdi_txtbox";
+            this.SatanKullanıcıAdi_txtbox.Size = new System.Drawing.Size(125, 27);
+            this.SatanKullanıcıAdi_txtbox.TabIndex = 9;
             // 
-            // textBox1
+            // UrunTalepNo_txtbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(180, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 7;
+            this.UrunTalepNo_txtbox.Location = new System.Drawing.Point(180, 24);
+            this.UrunTalepNo_txtbox.Name = "UrunTalepNo_txtbox";
+            this.UrunTalepNo_txtbox.Size = new System.Drawing.Size(125, 27);
+            this.UrunTalepNo_txtbox.TabIndex = 7;
             // 
             // label5
             // 
@@ -173,11 +173,11 @@ namespace BorsaUygulaması
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 60);
+            this.label2.Location = new System.Drawing.Point(75, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
+            this.label2.Size = new System.Drawing.Size(99, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Kullanıcı :";
+            this.label2.Text = "Kullanıcı Adı :";
             // 
             // label1
             // 
@@ -188,39 +188,39 @@ namespace BorsaUygulaması
             this.label1.TabIndex = 2;
             this.label1.Text = "Talep NO :";
             // 
-            // button2
+            // UrunRed_btn
             // 
-            this.button2.Location = new System.Drawing.Point(338, 82);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Reddet";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.UrunRed_btn.Location = new System.Drawing.Point(338, 82);
+            this.UrunRed_btn.Name = "UrunRed_btn";
+            this.UrunRed_btn.Size = new System.Drawing.Size(94, 29);
+            this.UrunRed_btn.TabIndex = 1;
+            this.UrunRed_btn.Text = "Reddet";
+            this.UrunRed_btn.UseVisualStyleBackColor = true;
+            this.UrunRed_btn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // UrunKabul_btn
             // 
-            this.button1.Location = new System.Drawing.Point(338, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Onayla";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.UrunKabul_btn.Location = new System.Drawing.Point(338, 24);
+            this.UrunKabul_btn.Name = "UrunKabul_btn";
+            this.UrunKabul_btn.Size = new System.Drawing.Size(94, 29);
+            this.UrunKabul_btn.TabIndex = 0;
+            this.UrunKabul_btn.Text = "Onayla";
+            this.UrunKabul_btn.UseVisualStyleBackColor = true;
+            this.UrunKabul_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Controls.Add(this.textBox7);
-            this.tabPage2.Controls.Add(this.textBox8);
-            this.tabPage2.Controls.Add(this.textBox9);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.para);
+            this.tabPage2.Controls.Add(this.kullaniciIDlbl);
+            this.tabPage2.Controls.Add(this.ParaDGW);
+            this.tabPage2.Controls.Add(this.KullaniciAdi_txtboxx);
+            this.tabPage2.Controls.Add(this.TalepMiktari_txtboxx);
+            this.tabPage2.Controls.Add(this.ParaTalepNo_txtbox);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.ParaReddet_btn);
+            this.tabPage2.Controls.Add(this.ParaKabul_btn);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -229,72 +229,75 @@ namespace BorsaUygulaması
             this.tabPage2.Text = "Bakiye Onayı";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // para
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 164);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(561, 188);
-            this.dataGridView2.TabIndex = 25;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            this.dataGridView2.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentDoubleClick);
+            this.para.AutoSize = true;
+            this.para.Location = new System.Drawing.Point(464, 123);
+            this.para.Name = "para";
+            this.para.Size = new System.Drawing.Size(13, 20);
+            this.para.TabIndex = 1;
+            this.para.Text = " ";
+            this.para.Visible = false;
             // 
-            // textBox7
+            // kullaniciIDlbl
             // 
-            this.textBox7.Location = new System.Drawing.Point(180, 62);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(125, 27);
-            this.textBox7.TabIndex = 23;
+            this.kullaniciIDlbl.AutoSize = true;
+            this.kullaniciIDlbl.Location = new System.Drawing.Point(493, 62);
+            this.kullaniciIDlbl.Name = "kullaniciIDlbl";
+            this.kullaniciIDlbl.Size = new System.Drawing.Size(0, 20);
+            this.kullaniciIDlbl.TabIndex = 26;
+            this.kullaniciIDlbl.Visible = false;
             // 
-            // textBox8
+            // ParaDGW
             // 
-            this.textBox8.Location = new System.Drawing.Point(180, 98);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(125, 27);
-            this.textBox8.TabIndex = 22;
+            this.ParaDGW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ParaDGW.Location = new System.Drawing.Point(13, 168);
+            this.ParaDGW.Name = "ParaDGW";
+            this.ParaDGW.RowHeadersWidth = 51;
+            this.ParaDGW.RowTemplate.Height = 29;
+            this.ParaDGW.Size = new System.Drawing.Size(561, 188);
+            this.ParaDGW.TabIndex = 25;
+            this.ParaDGW.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.ParaDGW.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentDoubleClick);
             // 
-            // textBox9
+            // KullaniciAdi_txtboxx
             // 
-            this.textBox9.Location = new System.Drawing.Point(180, 131);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(125, 27);
-            this.textBox9.TabIndex = 21;
+            this.KullaniciAdi_txtboxx.Location = new System.Drawing.Point(180, 62);
+            this.KullaniciAdi_txtboxx.Name = "KullaniciAdi_txtboxx";
+            this.KullaniciAdi_txtboxx.Size = new System.Drawing.Size(125, 27);
+            this.KullaniciAdi_txtboxx.TabIndex = 23;
             // 
-            // textBox2
+            // TalepMiktari_txtboxx
             // 
-            this.textBox2.Location = new System.Drawing.Point(180, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 20;
+            this.TalepMiktari_txtboxx.Location = new System.Drawing.Point(180, 95);
+            this.TalepMiktari_txtboxx.Name = "TalepMiktari_txtboxx";
+            this.TalepMiktari_txtboxx.Size = new System.Drawing.Size(125, 27);
+            this.TalepMiktari_txtboxx.TabIndex = 21;
+            // 
+            // ParaTalepNo_txtbox
+            // 
+            this.ParaTalepNo_txtbox.Location = new System.Drawing.Point(180, 30);
+            this.ParaTalepNo_txtbox.Name = "ParaTalepNo_txtbox";
+            this.ParaTalepNo_txtbox.Size = new System.Drawing.Size(125, 27);
+            this.ParaTalepNo_txtbox.TabIndex = 20;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(88, 131);
+            this.label7.Location = new System.Drawing.Point(41, 95);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 20);
+            this.label7.Size = new System.Drawing.Size(133, 20);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Ürün Fiyatı :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(100, 98);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 20);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Ürün Adı :";
+            this.label7.Text = "Para Talep Miktarı :";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(102, 69);
+            this.label9.Location = new System.Drawing.Point(75, 69);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 20);
+            this.label9.Size = new System.Drawing.Size(99, 20);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Kullanıcı :";
+            this.label9.Text = "Kullanıcı Adı :";
             // 
             // label10
             // 
@@ -305,25 +308,25 @@ namespace BorsaUygulaması
             this.label10.TabIndex = 15;
             this.label10.Text = "Talep NO :";
             // 
-            // button4
+            // ParaReddet_btn
             // 
-            this.button4.Location = new System.Drawing.Point(338, 91);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 29);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Reddet";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.ParaReddet_btn.Location = new System.Drawing.Point(338, 91);
+            this.ParaReddet_btn.Name = "ParaReddet_btn";
+            this.ParaReddet_btn.Size = new System.Drawing.Size(94, 29);
+            this.ParaReddet_btn.TabIndex = 14;
+            this.ParaReddet_btn.Text = "Reddet";
+            this.ParaReddet_btn.UseVisualStyleBackColor = true;
+            this.ParaReddet_btn.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // ParaKabul_btn
             // 
-            this.button3.Location = new System.Drawing.Point(338, 33);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 29);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Onayla";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.ParaKabul_btn.Location = new System.Drawing.Point(338, 33);
+            this.ParaKabul_btn.Name = "ParaKabul_btn";
+            this.ParaKabul_btn.Size = new System.Drawing.Size(94, 29);
+            this.ParaKabul_btn.TabIndex = 13;
+            this.ParaKabul_btn.Text = "Onayla";
+            this.ParaKabul_btn.UseVisualStyleBackColor = true;
+            this.ParaKabul_btn.Click += new System.EventHandler(this.button3_Click);
             // 
             // AdminOnay
             // 
@@ -331,19 +334,20 @@ namespace BorsaUygulaması
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BorsaUygulamasiFinal.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(618, 444);
+            this.ClientSize = new System.Drawing.Size(607, 440);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminOnay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Onay Ekranı";
             this.Load += new System.EventHandler(this.AdminOnay_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UrunDGW)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ParaDGW)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -353,31 +357,31 @@ namespace BorsaUygulaması
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView UrunDGW;
+        private System.Windows.Forms.TextBox UrunFiyat_txtbox;
+        private System.Windows.Forms.TextBox UrunAdi_txtbox;
+        private System.Windows.Forms.TextBox SatanKullanıcıAdi_txtbox;
+        private System.Windows.Forms.TextBox UrunTalepNo_txtbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button UrunRed_btn;
+        private System.Windows.Forms.Button UrunKabul_btn;
+        private System.Windows.Forms.DataGridView ParaDGW;
+        private System.Windows.Forms.TextBox KullaniciAdi_txtboxx;
+        private System.Windows.Forms.TextBox TalepMiktari_txtboxx;
+        private System.Windows.Forms.TextBox ParaTalepNo_txtbox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button ParaKabul_btn;
+        private System.Windows.Forms.TextBox UrunMiktar_txtbox;
         private System.Windows.Forms.Button utt;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button ParaReddet_btn;
+        private System.Windows.Forms.Label kullaniciIDlbl;
+        private System.Windows.Forms.Label para;
     }
 }

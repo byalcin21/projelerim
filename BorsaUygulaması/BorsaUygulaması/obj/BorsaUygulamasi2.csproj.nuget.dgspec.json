@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\BorsaUygulaması.csproj": {}
+    "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\BorsaUygulamasi2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\BorsaUygulaması.csproj": {
+    "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\BorsaUygulamasi2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\BorsaUygulaması.csproj",
-        "projectName": "BorsaUygulaması",
-        "projectPath": "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\BorsaUygulaması.csproj",
+        "projectUniqueName": "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\BorsaUygulamasi2.csproj",
+        "projectName": "BorsaUygulamasi2",
+        "projectPath": "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\BorsaUygulamasi2.csproj",
         "packagesPath": "C:\\Users\\baran\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\baran\\OneDrive\\Masaüstü\\BorsaUygulaması2\\BorsaUygulaması\\obj\\",
         "projectStyle": "PackageReference",

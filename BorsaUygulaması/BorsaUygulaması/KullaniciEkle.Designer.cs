@@ -194,7 +194,7 @@ namespace BorsaUygulaması
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BorsaUygulamasiFinal.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(281, 427);
+            this.ClientSize = new System.Drawing.Size(281, 409);
             this.Controls.Add(this.Kullanici_ekle_btn);
             this.Controls.Add(this.Sifre_textbox);
             this.Controls.Add(this.label8);

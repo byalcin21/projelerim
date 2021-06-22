@@ -19,10 +19,10 @@ namespace BorsaUygulaması
         
         private void Kullanici_Ekle_Click(object sender, EventArgs e)
         {
-            KullaniciEkle frm3 = new KullaniciEkle();
-            this.Hide();
-            frm3.ShowDialog();
-            this.Close();
+            KullaniciEkle kullaniciEklemeEkrani = new KullaniciEkle();
+            
+            kullaniciEklemeEkrani.ShowDialog();
+           
         }
 
         private void Alim_Satim_Goster_Click(object sender, EventArgs e)
@@ -32,6 +32,13 @@ namespace BorsaUygulaması
 
         private void Alici_Onay_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void AdminOnay_Click(object sender, EventArgs e)
+        {
+            AdminOnay adminOnaylama = new AdminOnay();
+            adminOnaylama.ShowDialog();
 
         }
     }

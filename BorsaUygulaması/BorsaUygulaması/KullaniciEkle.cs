@@ -22,7 +22,7 @@ namespace BorsaUygulaması
         {
                 baglanti.Open();
                 SqlCommand komut = new SqlCommand("insert into Kullanici(Adı,Soyadı,TC,Telefon,email,KullanıcıAdı,Şifre,Adres) values(@Adı,@Soyadı,@TC,@Telefon,@email,@KullanıcıAdı,@Şifre,@Adres) ", baglanti);
-                komut.Parameters.AddWithValue("@Adı", Ad_textbox.Text);
+                komut.Parameters.AddWithValue("@Adı", Ad_textbox.Text);// textboxlara girilen değerleri veri tabanına bağlanarak kullanici tablosuna yazdırdım 
                 komut.Parameters.AddWithValue("@Soyadı", Soyad_textbox.Text);
                 komut.Parameters.AddWithValue("@TC", TC_textbox.Text);
                 komut.Parameters.AddWithValue("@Telefon", Telefon_textbox.Text);

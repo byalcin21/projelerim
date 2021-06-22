@@ -21,28 +21,38 @@ namespace BorsaUygulaması
 
         SqlConnection baglanti = new SqlConnection("Data Source=.;Initial Catalog=Borsa;Integrated Security=True");
         
+       
+
         private void Giris_Button_Click(object sender, EventArgs e)
-        {AdminAnaMenu frm2 = new AdminAnaMenu();
+        {
+            AdminAnaMenu admin = new AdminAnaMenu();
+
+            Alim_Satim alim_Satim = new Alim_Satim();//  alim_satim formunu kullanarak nesne oluşturdum çünkü kullanıcı formundaki kullanıcı adını alım satım ekranına göndermek için gerekli 
+            alim_Satim.KAdilbl.Text = KullaniciAdi_textbox.Text;
             baglanti.Open();
             SqlDataReader reader;
-            SqlCommand komut = new SqlCommand("Select * from Kullanici where KullanıcıAdı = @KullanıcıAdı and Şifre = @Şifre", baglanti);
+            SqlCommand komut = new SqlCommand("Select * from Kullanici where KullanıcıAdı = @KullanıcıAdı and Şifre = @Şifre", baglanti);// veri tabanından verileri çekip data readerla okutup textboxlardaki textlerle karşılaştırıyoruz ve giriş işleminin kontrolünü sağlıyoruz
             komut.Parameters.AddWithValue("@KullanıcıAdı", KullaniciAdi_textbox.Text);//parametreler
             komut.Parameters.AddWithValue("@Şifre", Sifre_textbox.Text);
             reader = komut.ExecuteReader();
             while (reader.Read())
-            {
-                Kullanici frm3 = new Kullanici();
-                this.Hide();
-                frm3.ShowDialog();
+            { 
+               
+                Kullanici KullaniciEkrani = new Kullanici();// kullanıcı ekranını kullanarak nesne tanımladım ekran geçişi ve formlar arası veri aktarımı için kullanıcam
+                KullaniciEkrani.KullaniciAdilbl.Text = KullaniciAdi_textbox.Text;
+                MessageBox.Show("Giriş Başarılı Hoşgeldin "+KullaniciAdi_textbox.Text+" :)");
+                this.Hide();// ekranı açmadan önce gizledim ekranı açtım ve diğer ekranı kapattım 
+                KullaniciEkrani.ShowDialog();
                 this.Close();
 
             }
             
             if (KullaniciAdi_textbox.Text == "Admin" && Sifre_textbox.Text == "admin123")
             {
-                MessageBox.Show("Giriş Başarılı..");
+               
+                MessageBox.Show("Giriş Başarılı Hoşgeldin Admin :)");
                 this.Hide();
-                frm2.ShowDialog();
+                admin.ShowDialog();
                 this.Close();
             }
             else
@@ -51,7 +61,7 @@ namespace BorsaUygulaması
                 {
                     if (item is TextBox)
                     {
-                        item.Text = "";
+                        item.Text = "";// eğer kullanıcı adı ve şifre eşleşmezse textboxların textlerini temizler ve giriş başarısız mesajını verir.
                     }
                 }
                 MessageBox.Show("Giriş Başarısız. Kullanıcı Adı veya Şifre Hatalı  !!!"); 
@@ -65,8 +75,8 @@ namespace BorsaUygulaması
 
         private void UyeOl_btn_Click(object sender, EventArgs e)
         {
-            KullaniciEkle frm4 = new KullaniciEkle();
-            frm4.ShowDialog();
+            KullaniciEkle KayitEkrani = new KullaniciEkle();
+            KayitEkrani.ShowDialog();// eğer kullanıcı kayıtlı değilse giriş ekranından kayıt olması için kayıt ekranına yönlendirilir
         }
     }
 }

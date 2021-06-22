@@ -43,7 +43,7 @@ namespace BorsaUygulaması
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(72, 64);
+            this.label1.Location = new System.Drawing.Point(90, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace BorsaUygulaması
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 117);
+            this.label2.Location = new System.Drawing.Point(90, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 20);
             this.label2.TabIndex = 1;
@@ -60,21 +60,22 @@ namespace BorsaUygulaması
             // 
             // KullaniciAdi_textbox
             // 
-            this.KullaniciAdi_textbox.Location = new System.Drawing.Point(72, 87);
+            this.KullaniciAdi_textbox.Location = new System.Drawing.Point(90, 65);
             this.KullaniciAdi_textbox.Name = "KullaniciAdi_textbox";
             this.KullaniciAdi_textbox.Size = new System.Drawing.Size(207, 27);
             this.KullaniciAdi_textbox.TabIndex = 2;
             // 
             // Sifre_textbox
             // 
-            this.Sifre_textbox.Location = new System.Drawing.Point(72, 140);
+            this.Sifre_textbox.Location = new System.Drawing.Point(90, 118);
             this.Sifre_textbox.Name = "Sifre_textbox";
+            this.Sifre_textbox.PasswordChar = '*';
             this.Sifre_textbox.Size = new System.Drawing.Size(207, 27);
             this.Sifre_textbox.TabIndex = 3;
             // 
             // Giris_Button
             // 
-            this.Giris_Button.Location = new System.Drawing.Point(188, 186);
+            this.Giris_Button.Location = new System.Drawing.Point(206, 164);
             this.Giris_Button.Name = "Giris_Button";
             this.Giris_Button.Size = new System.Drawing.Size(91, 28);
             this.Giris_Button.TabIndex = 4;
@@ -84,7 +85,7 @@ namespace BorsaUygulaması
             // 
             // UyeOl_btn
             // 
-            this.UyeOl_btn.Location = new System.Drawing.Point(20, 214);
+            this.UyeOl_btn.Location = new System.Drawing.Point(38, 192);
             this.UyeOl_btn.Name = "UyeOl_btn";
             this.UyeOl_btn.Size = new System.Drawing.Size(91, 29);
             this.UyeOl_btn.TabIndex = 5;
@@ -95,7 +96,7 @@ namespace BorsaUygulaması
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 186);
+            this.label3.Location = new System.Drawing.Point(38, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 20);
             this.label3.TabIndex = 6;
@@ -107,7 +108,7 @@ namespace BorsaUygulaması
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BorsaUygulamasiFinal.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(329, 287);
+            this.ClientSize = new System.Drawing.Size(350, 282);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.UyeOl_btn);
             this.Controls.Add(this.Giris_Button);
@@ -129,11 +130,11 @@ namespace BorsaUygulaması
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox KullaniciAdi_textbox;
         private System.Windows.Forms.TextBox Sifre_textbox;
         private System.Windows.Forms.Button Giris_Button;
         private System.Windows.Forms.Button UyeOl_btn;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox KullaniciAdi_textbox;
     }
 }
 

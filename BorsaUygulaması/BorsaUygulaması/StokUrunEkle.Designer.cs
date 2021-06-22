@@ -33,11 +33,11 @@ namespace BorsaUygulaması
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.UrunEkle_btn = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.NUDMiktar = new System.Windows.Forms.NumericUpDown();
             this.txt_Para = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDMiktar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,30 +67,38 @@ namespace BorsaUygulaması
             this.label3.TabIndex = 2;
             this.label3.Text = "ÜRÜNÜN BİRİM FİYATI :";
             // 
-            // button1
+            // UrunEkle_btn
             // 
-            this.button1.Location = new System.Drawing.Point(266, 199);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "EKLE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.UrunEkle_btn.Location = new System.Drawing.Point(266, 199);
+            this.UrunEkle_btn.Name = "UrunEkle_btn";
+            this.UrunEkle_btn.Size = new System.Drawing.Size(94, 29);
+            this.UrunEkle_btn.TabIndex = 3;
+            this.UrunEkle_btn.Text = "EKLE";
+            this.UrunEkle_btn.UseVisualStyleBackColor = true;
+            this.UrunEkle_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "ÜZÜM(KG)",
+            "ARPA(KG)",
+            "BUĞDAY(KG)",
+            "DEZENFEKTAN(LİTRE)",
+            "CERRAHİ MASKE(50 ADET)",
+            "LİMON KOLONYASI(LİTRE)",
+            "ELMA(KG)"});
             this.comboBox1.Location = new System.Drawing.Point(242, 60);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
             this.comboBox1.TabIndex = 4;
             // 
-            // numericUpDown1
+            // NUDMiktar
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(243, 108);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(150, 27);
-            this.numericUpDown1.TabIndex = 5;
+            this.NUDMiktar.Location = new System.Drawing.Point(243, 108);
+            this.NUDMiktar.Name = "NUDMiktar";
+            this.NUDMiktar.Size = new System.Drawing.Size(150, 27);
+            this.NUDMiktar.TabIndex = 5;
             // 
             // txt_Para
             // 
@@ -107,9 +115,9 @@ namespace BorsaUygulaması
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(409, 252);
             this.Controls.Add(this.txt_Para);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.NUDMiktar);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.UrunEkle_btn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -117,7 +125,7 @@ namespace BorsaUygulaması
             this.Name = "StokUrunEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StokUrunEkle";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDMiktar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,9 +136,9 @@ namespace BorsaUygulaması
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button UrunEkle_btn;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown NUDMiktar;
         private System.Windows.Forms.TextBox txt_Para;
     }
 }
