@@ -69,7 +69,7 @@ namespace BorsaUygulaması
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BorsaUygulaması.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
+            this.BackgroundImage = global::BorsaUygulamasiFinal.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(303, 213);
             this.Controls.Add(this.Ozet);

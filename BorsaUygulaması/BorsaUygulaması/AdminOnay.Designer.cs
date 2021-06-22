@@ -48,9 +48,11 @@ namespace BorsaUygulaması
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -69,7 +71,7 @@ namespace BorsaUygulaması
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(585, 380);
+            this.tabControl1.Size = new System.Drawing.Size(585, 406);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -210,9 +212,11 @@ namespace BorsaUygulaması
             // 
             this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.Controls.Add(this.textBox7);
+            this.tabPage2.Controls.Add(this.textBox8);
             this.tabPage2.Controls.Add(this.textBox9);
             this.tabPage2.Controls.Add(this.textBox2);
             this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.button4);
@@ -220,7 +224,7 @@ namespace BorsaUygulaması
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(577, 347);
+            this.tabPage2.Size = new System.Drawing.Size(577, 373);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bakiye Onayı";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -232,11 +236,10 @@ namespace BorsaUygulaması
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(561, 153);
+            this.dataGridView2.Size = new System.Drawing.Size(561, 188);
             this.dataGridView2.TabIndex = 25;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             this.dataGridView2.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentDoubleClick);
-            this.dataGridView2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView2_MouseDoubleClick);
             // 
             // textBox7
             // 
@@ -245,9 +248,16 @@ namespace BorsaUygulaması
             this.textBox7.Size = new System.Drawing.Size(125, 27);
             this.textBox7.TabIndex = 23;
             // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(180, 98);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(125, 27);
+            this.textBox8.TabIndex = 22;
+            // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(180, 95);
+            this.textBox9.Location = new System.Drawing.Point(180, 131);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(125, 27);
             this.textBox9.TabIndex = 21;
@@ -262,11 +272,20 @@ namespace BorsaUygulaması
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(73, 95);
+            this.label7.Location = new System.Drawing.Point(88, 131);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 20);
+            this.label7.Size = new System.Drawing.Size(86, 20);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Talep Miktarı :";
+            this.label7.Text = "Ürün Fiyatı :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(100, 98);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 20);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Ürün Adı :";
             // 
             // label9
             // 
@@ -310,9 +329,9 @@ namespace BorsaUygulaması
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BorsaUygulaması.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
+            this.BackgroundImage = global::BorsaUygulamasiFinal.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(609, 403);
+            this.ClientSize = new System.Drawing.Size(618, 444);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminOnay";
@@ -348,9 +367,11 @@ namespace BorsaUygulaması
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button;

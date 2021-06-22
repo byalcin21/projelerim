@@ -22,8 +22,7 @@ namespace BorsaUygulaması
         SqlConnection baglanti = new SqlConnection("Data Source=.;Initial Catalog=Borsa;Integrated Security=True");
         
         private void Giris_Button_Click(object sender, EventArgs e)
-        {
-            AdminAnaMenu frm2 = new AdminAnaMenu();
+        {AdminAnaMenu frm2 = new AdminAnaMenu();
             baglanti.Open();
             SqlDataReader reader;
             SqlCommand komut = new SqlCommand("Select * from Kullanici where KullanıcıAdı = @KullanıcıAdı and Şifre = @Şifre", baglanti);

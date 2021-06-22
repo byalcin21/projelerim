@@ -22,7 +22,7 @@ namespace BorsaUygulaması
         SqlDataAdapter da;
         private void urunonaylistele()
         {
-            baglantim = new SqlConnection("Data Source=.;Initial Catalog=Borsa;Integrated Security=True");
+            baglantim = new SqlConnection("Data Source=DARKOLD\\DARKOLD;Initial Catalog=Urun;Integrated Security=True");
             baglantim.Open();
 
             da = new SqlDataAdapter("SELECT urunlerID[Talep ID] ,KullaniciAdi[Kullanıcı Adı],UrunIsmi[Ürün İsmi],urunFiyati[Ürün Fiyatı(Kg)],UrunMiktari[Ürün Miktarı] FROM Urunler", baglantim);
@@ -97,9 +97,7 @@ namespace BorsaUygulaması
             komut = new SqlCommand(sorgu, baglantim);
             komut.Parameters.AddWithValue("@ıd", Convert.ToInt32(textBox2.Text));
             komut.ExecuteNonQuery();
-            
             baglantim.Close();
-            
         }
 
         private void uruntaleptemizle()
@@ -109,9 +107,7 @@ namespace BorsaUygulaması
             komut = new SqlCommand(sorgu, baglantim);
             komut.Parameters.AddWithValue("@urunID", Convert.ToInt32(textBox1.Text));
             komut.ExecuteNonQuery();
-           
-            baglantim.Close(); 
-           
+            baglantim.Close();
         }
 
 
@@ -143,8 +139,6 @@ namespace BorsaUygulaması
         private void button2_Click(object sender, EventArgs e)
         {
             uruntaleptemizle();
-            MessageBox.Show("Ürün Talebi Reddedildi.");
-            urunonaylistele();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -155,22 +149,12 @@ namespace BorsaUygulaması
         private void button4_Click(object sender, EventArgs e)
         {
             parataleptemizle();
-            MessageBox.Show("Para Talebi Reddedildi.");
-            paraonaylistele();
         }
 
         private void dataGridView2_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             textBox2.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-         
-            textBox7.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-            textBox9.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-        }
-
-        private void dataGridView2_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            textBox2.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-            
+            // textBox7.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
             textBox7.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
             textBox9.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
         }

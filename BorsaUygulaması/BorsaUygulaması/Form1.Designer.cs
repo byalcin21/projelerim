@@ -69,7 +69,6 @@ namespace BorsaUygulaması
             // 
             this.Sifre_textbox.Location = new System.Drawing.Point(72, 140);
             this.Sifre_textbox.Name = "Sifre_textbox";
-            this.Sifre_textbox.PasswordChar = '*';
             this.Sifre_textbox.Size = new System.Drawing.Size(207, 27);
             this.Sifre_textbox.TabIndex = 3;
             // 
@@ -106,7 +105,7 @@ namespace BorsaUygulaması
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BorsaUygulaması.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
+            this.BackgroundImage = global::BorsaUygulamasiFinal.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(329, 287);
             this.Controls.Add(this.label3);

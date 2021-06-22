@@ -32,6 +32,7 @@ namespace BorsaUygulaması
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminAnaMenu));
             this.Kullanici_Ekle = new System.Windows.Forms.Button();
             this.Alici_Onay = new System.Windows.Forms.Button();
+            this.Satici_Onay = new System.Windows.Forms.Button();
             this.Alim_Satim_Goster = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -39,7 +40,7 @@ namespace BorsaUygulaması
             // 
             this.Kullanici_Ekle.Location = new System.Drawing.Point(12, 12);
             this.Kullanici_Ekle.Name = "Kullanici_Ekle";
-            this.Kullanici_Ekle.Size = new System.Drawing.Size(143, 29);
+            this.Kullanici_Ekle.Size = new System.Drawing.Size(130, 29);
             this.Kullanici_Ekle.TabIndex = 0;
             this.Kullanici_Ekle.Text = "KULLANICI EKLE";
             this.Kullanici_Ekle.UseVisualStyleBackColor = true;
@@ -49,17 +50,26 @@ namespace BorsaUygulaması
             // 
             this.Alici_Onay.Location = new System.Drawing.Point(12, 47);
             this.Alici_Onay.Name = "Alici_Onay";
-            this.Alici_Onay.Size = new System.Drawing.Size(143, 29);
+            this.Alici_Onay.Size = new System.Drawing.Size(130, 29);
             this.Alici_Onay.TabIndex = 1;
-            this.Alici_Onay.Text = "ADMİN ONAY";
+            this.Alici_Onay.Text = "ALICI ONAY";
             this.Alici_Onay.UseVisualStyleBackColor = true;
             this.Alici_Onay.Click += new System.EventHandler(this.Alici_Onay_Click);
             // 
+            // Satici_Onay
+            // 
+            this.Satici_Onay.Location = new System.Drawing.Point(12, 82);
+            this.Satici_Onay.Name = "Satici_Onay";
+            this.Satici_Onay.Size = new System.Drawing.Size(130, 29);
+            this.Satici_Onay.TabIndex = 2;
+            this.Satici_Onay.Text = "SATICI ONAY";
+            this.Satici_Onay.UseVisualStyleBackColor = true;
+            // 
             // Alim_Satim_Goster
             // 
-            this.Alim_Satim_Goster.Location = new System.Drawing.Point(12, 82);
+            this.Alim_Satim_Goster.Location = new System.Drawing.Point(12, 117);
             this.Alim_Satim_Goster.Name = "Alim_Satim_Goster";
-            this.Alim_Satim_Goster.Size = new System.Drawing.Size(143, 29);
+            this.Alim_Satim_Goster.Size = new System.Drawing.Size(130, 29);
             this.Alim_Satim_Goster.TabIndex = 3;
             this.Alim_Satim_Goster.Text = "ALIM- SATIM";
             this.Alim_Satim_Goster.UseVisualStyleBackColor = true;
@@ -69,10 +79,11 @@ namespace BorsaUygulaması
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BorsaUygulaması.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
+            this.BackgroundImage = global::BorsaUygulamasiFinal.Properties.Resources.wallpapersden_com_low_poly_blue_geometry_artwork_1280x720;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(271, 276);
             this.Controls.Add(this.Alim_Satim_Goster);
+            this.Controls.Add(this.Satici_Onay);
             this.Controls.Add(this.Alici_Onay);
             this.Controls.Add(this.Kullanici_Ekle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -87,6 +98,7 @@ namespace BorsaUygulaması
 
         private System.Windows.Forms.Button Kullanici_Ekle;
         private System.Windows.Forms.Button Alici_Onay;
+        private System.Windows.Forms.Button Satici_Onay;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button Alim_Satim_Goster;
     }

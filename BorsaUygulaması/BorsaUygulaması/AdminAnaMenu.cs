@@ -32,10 +32,7 @@ namespace BorsaUygulaması
 
         private void Alici_Onay_Click(object sender, EventArgs e)
         {
-            AdminOnay frm10 = new AdminOnay();
-            this.Hide();
-            frm10.ShowDialog();
-            
+
         }
     }
 }
